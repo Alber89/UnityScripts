@@ -1,2 +1,1 @@
-# UnityScripts
- 
+Script applicati su Unity, per imparare e per allenarsi.
