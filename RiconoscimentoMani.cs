@@ -34,14 +34,6 @@ public class RiconoscimentoMani : MonoBehaviour
             }
             
         }
-        
-        /*
-        Frame frame = provider.CurrentFrame;
-        Hand hand = frame.Hand(0); // cannot apply indexing
-        Vector position = hand.PalmPosition;
-        Vector direction = hand.Direction;
 
-        Debug.Log("The position of hand is" + position + "The direction of hand is" + direction);
-        */
     }
 }
