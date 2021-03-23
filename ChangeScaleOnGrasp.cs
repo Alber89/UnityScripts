@@ -1,9 +1,9 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Leap.Unity.Interaction;
 
-public class ChangeScale : MonoBehaviour
+public class ChangeScaleOnGrasp : MonoBehaviour
 {
     InteractionBehaviour interactionBehaviour;
 
@@ -13,11 +13,7 @@ public class ChangeScale : MonoBehaviour
         interactionBehaviour = GetComponent<InteractionBehaviour>();
         //Associo il cambiamento di scala al grasp
         interactionBehaviour.OnGraspBegin += cambiaScalaAlGrab;
-    }
-
-    void Update()
-    {
-        
+        interactionBehaviour.OnGraspStay += cambiaScalaAlGrab;
     }
 
     private void cambiaScalaAlGrab()
